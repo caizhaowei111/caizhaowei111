@@ -1,16 +1,12 @@
-/* 全局样式 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #e8f5e9;
 }
-
-/* 头部区域 */
 header {
     background-color: #4caf50;
     color: white;
@@ -23,37 +19,28 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo img {
     height: 50px;
 }
-
 nav ul {
     list-style-type: none;
     display: flex;
 }
-
 nav ul li {
     margin-left: 20px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
 }
-
 nav ul li a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
-/* 主体内容区 */
 main {
     margin-top: 90px;
     overflow: auto;
 }
-
-/* 左侧栏：图书分类导航（相对定位） */
 .left-sidebar {
     width: 20%;
     float: left;
@@ -64,39 +51,30 @@ main {
     background-color: #81c784;
     border-right: 1px solid #4caf50;
 }
-
 .left-sidebar h2 {
     color: white;
     margin-bottom: 10px;
 }
-
 .left-sidebar ul {
     list-style-type: none;
 }
-
 .left-sidebar ul li {
     margin-bottom: 8px;
 }
-
 .left-sidebar ul li a {
     color: white;
     text-decoration: none;
 }
-
 .left-sidebar ul li a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
-/* 中间栏 */
 .middle-content {
     width: 60%;
     float: left;
     padding: 20px;
     box-sizing: border-box;
 }
-
-/* 图书展示区（四本书） */
 .book-display {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +82,6 @@ main {
     margin-bottom: 30px;
     justify-content: flex-start;
 }
-
 .book-item {
     position: relative;
     width: calc(25% - 12px);
@@ -114,14 +91,12 @@ main {
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
-
 .book-item img {
     width: 100%;
     height: 200px;
     border: 1px solid #4caf50;
     border-radius: 4px;
 }
-
 .book-hover {
     position: absolute;
     top: 0;
@@ -136,19 +111,15 @@ main {
     text-align: center;
     cursor: pointer;
 }
-
 .book-item:hover .book-hover {
     display: flex;
 }
-
-/* 热门推荐三本书正居中浮动排列 */
 .hot-recommend {
     width: 100%;
     text-align: center;
     margin: 30px 0;
     white-space: nowrap;
 }
-
 .recommend-item {
     display: inline-block;
     vertical-align: top;
@@ -160,21 +131,17 @@ main {
     padding: 8px;
     white-space: normal;
 }
-
 .recommend-item img {
     width: 100%;
     height: 140px;
     border: 1px solid #4caf50;
     border-radius: 4px;
 }
-
 .recommend-item p {
     margin-top: 6px;
     text-align: center;
     font-size: 13px;
 }
-
-/* 新书上市表格 */
 table {
     width: 80%;
     margin: 20px auto 0;
@@ -184,20 +151,16 @@ table {
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
-
 th,
 td {
     border: 1px solid #4caf50;
     padding: 10px;
     text-align: left;
 }
-
 th {
     background-color: #81c784;
     color: white;
 }
-
-/* 右侧栏：促销信息（固定定位） */
 .right-sidebar {
     width: 20%;
     padding: 20px;
@@ -210,13 +173,10 @@ th {
     height: calc(100vh - 90px);
     overflow-y: auto;
 }
-
 .right-sidebar h2 {
     color: #4caf50;
     margin-bottom: 10px;
 }
-
-/* 响应式设计 */
 @media (max-width: 1000px) {
     .left-sidebar {
         display: none;
